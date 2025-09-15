@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM Background</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <h1>Background Remover</h1>
+
+    <div class="upload-area">
+        <input type="file" id="inpImage" accept="image/*">
+        <button id="processBtn" class="btnStyle" disabled>Remove Background</button>
+    </div>
+
+    <div class="preview">
+        <h3>Original</h3>
+        <img id="originalImage" alt="Preview">
+
+        <h3>Result</h3>
+        <canvas id="outImage"></canvas>
+    </div>
+    <a id="downloadBtn" download="outImage.png" class="hidden">Download</a>
+    
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>

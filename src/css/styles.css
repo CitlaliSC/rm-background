@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: #fafafa;
+    text-align: center;
+    padding: 30px;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.upload-area {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnStyle {
+    padding: 10px 20px;
+    background: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+button:hover:not(:disabled), .download-btn:hover {
+    background: #005bb5;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background: #b0b0b0;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.download-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.preview h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.preview > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+img, canvas {
+    max-width: 280px;
+    max-height: 280px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Input file styling */
+#inpImage {
+    padding: 8px;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}

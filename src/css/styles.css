@@ -94,3 +94,42 @@ img, canvas {
     background: white;
     cursor: pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1e1e1e;
+        color: #f5f5f5;
+    }
+
+    h1 {
+        color: #f5f5f5;
+    }
+
+    .btnStyle {
+        background: #0a84ff;
+        color: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    button:hover:not(:disabled), .download-btn:hover {
+        background: #0066cc;
+    }
+
+    button:disabled {
+        background: #555;
+    }
+
+    img, canvas {
+        border: 1px solid #444;
+        background: #2a2a2a;
+    }
+
+    #inpImage {
+        background: #2a2a2a;
+        color: #f5f5f5;
+    }
+
+    .preview h3 {
+        color: #ddd;
+    }
+}

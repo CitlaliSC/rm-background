@@ -50,5 +50,5 @@ processBtn.addEventListener("click", async () => {
     }
 
     processBtn.textContent = "Remove Background";
-    processBtn.disabled = false;
+    processBtn.disabled = true;
 })

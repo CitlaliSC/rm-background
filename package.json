@@ -1,0 +1,15 @@
+{
+  "name": "rm-background",
+  "version": "1.0.0",
+  "description": "Simple background remover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "CitlaliSC",
+  "license": "ISC",
+  "dependencies": {
+    "@imgly/background-removal": "^1.7.0"
+  }
+}
